@@ -1,0 +1,356 @@
+---
+---
+
+$gray-lightest: #ededed;
+$gray-lighter: #c3c3c3;
+$gray-light: #97a4b2;
+$gray-darker: #20242b;
+$gray-darkest: #1a1d23;
+$accent-base: #46abf2;
+
+$text-color: $gray-light !default;
+$font-size-base: 18px !default;
+
+$font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif !default;
+
+@import "bootstrap";
+
+$header-bg-color: $gray-darkest;
+$content-bg-color: $gray-darker;
+$footer-bg-color: $gray-darkest;
+
+body
+{
+    background-color: $footer-bg-color;
+    font-weight: 300;
+}
+
+h1, h2, h3
+{
+    color: $gray-lightest;
+}
+
+h1
+{
+    font-size: 40px;
+}
+
+h2
+{
+    font-size: 30px;
+}
+
+::selection
+{
+    background: $accent-base;
+}
+
+.home-header
+{
+    background-color: $header-bg-color;
+    color: $gray-lightest;
+    padding: 75px 0px;
+    /*border-bottom: 1px solid lighten($bg-color, 15%);*/
+    .outer
+    {
+        margin: 0 auto;
+        display: table;
+        .inner
+        {
+            padding: 25px;
+            width: 100%;
+            text-align: center;
+            .name
+            {
+                font-size: 42px;
+                line-height: 40px;
+                font-weight: 400;
+            }
+            .title
+            {
+                margin-top: 22px;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 400;
+            }
+            .nav
+            {
+                margin-top: 40px;
+                font-size: 0;
+                a
+                {
+                    display: inline-block;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+.home-header-2
+{
+    line-height: 18px;
+    padding: 25px 0;
+    .title
+    {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $gray-lightest;
+        float: left;
+        div
+        {
+            display: inline-block;
+        }
+        .job
+        {
+            margin-left: 10px;
+            color: $text-color;
+        }
+    }
+    .nav
+    {
+        font-size: 20px;
+        text-transform: uppercase;
+        float: right;
+        a
+        {
+            color: $gray-lightest;
+            margin-left: 5px;
+            &:hover
+            {
+                color: $accent-base;
+            }
+        }
+    }
+}
+
+.btn
+{
+    height: 42px;
+    line-height: 38px;
+    border-radius: 0px;
+    padding: 0 22px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 300;
+}
+
+a, a:active, a:visited, a:link
+{
+    text-decoration: none;
+    color: $accent-base;
+    font-weight: 300;
+    transition: all 0.1s ease-in-out;
+    &:hover
+    {
+        color: $gray-lightest;
+        text-decoration: none;
+    }
+}
+
+hr
+{
+    margin: 10px 0;
+    border-top: 1px solid darken($gray-lighter, 40%);
+}
+
+.btn-default, .btn-default:active, .btn-default:visited
+{
+    background-color: transparent;
+    border-color: darken($text-color, 60%);
+    color: $text-color;
+    box-shadow: none;
+    &:hover
+    {
+        background-color: transparent;
+        border-color: $accent-base;
+        color: $accent-base;
+    }
+}
+
+.btn-blue, .btn-blue:active, .btn-blue:visited, .btn-blue:link
+{
+    background-color: transparent;
+    border-color: rgba(69, 156, 247, 0.6);
+    color: $accent-base;
+    box-shadow: none;
+    &:hover
+    {
+        background-color: $accent-base;
+        border-color: $accent-base;
+        color: $gray-lightest;
+    }
+}
+
+.btn-white-header, .btn-white-header:active, .btn-white-header:visited, .btn-white-header:link
+{
+    background-color: transparent;
+    border-color: rgba(237, 237, 237, 0.6);
+    color: $gray-lightest;
+    box-shadow: none;
+    &:hover
+    {
+        background-color: $gray-lightest;
+        border-color: $gray-lightest;
+        color: $header-bg-color;
+    }
+}
+
+.btn-test, .btn-test:active, .btn-test:visited, .btn-test:link
+{
+    background-color: transparent;
+    border-color: transparent;
+    color: $gray-lightest;
+    box-shadow: none;
+    &:hover
+    {
+        background-color: transparent;
+        border-color: $accent-base;
+        color: $accent-base;
+    }
+}
+
+.page-title
+{
+    background-color: $accent-base;
+    color: $gray-lightest;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.content
+{
+    background-color: $content-bg-color;
+    .content-inner
+    {
+        padding: 50px 0;
+        h1:first-child
+        {
+            margin-top: 0;
+        }
+    }
+    .project
+    {
+        display: block;
+        padding: 100px 0;
+        transition: all 0.2s ease-in-out;
+        color: $text-color;
+        .title
+        {
+            color: $gray-lightest;
+            font-size: 26px;
+            font-weight: 400;
+        }
+        .details
+        {
+            margin-top: 10px;
+            .detail
+            {
+                margin-top: 0px;
+                font-weight: 300;
+                .label
+                {
+                    color: $text-color;
+                    font-weight: 400;
+                    font-size: $font-size-base;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        .description
+        {
+            font-weight: 300;
+            margin-top: 10px;
+        }
+        .nav
+        {
+            margin-top: 20px;
+        }
+        .project-thumb
+        {
+            width: 100%;
+        }
+        &:hover
+        {
+            background-color: lighten($content-bg-color, 2%);
+            color: $text-color;
+        }
+    }
+}
+
+footer
+{
+    /* border-top: 1px solid lighten($bg-color, 15%);*/
+    height: 100%;
+    padding: 25px 0;
+    background-color: $footer-bg-color;
+    text-align: center;
+    .copyright
+    {
+        font-weight: 300;
+        a
+        {
+            margin-left: 10px;
+        }
+    }
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li
+        {
+            display: inline-block;
+            margin: 0 3px;
+        }
+    }
+}
+
+.project-page
+{
+    h1:first-child
+    {
+        margin-top: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .description
+    {
+        background-color: lighten($content-bg-color, 2%);
+        padding: 50px 0;
+        .detail
+        {
+            margin-bottom: 15px;
+            line-height: 18px;
+            .first
+            {
+                font-weight: 400;
+                color: $gray-lightest;
+                text-align: right;
+            }
+            .second
+            {
+                text-align: left;
+            }
+        }
+        .detail.last
+        {
+            margin-bottom: 0px
+        }
+    }
+    .media
+    {
+        padding: 50px 0 70px 0;
+        .carousel-indicators
+        {
+            bottom: -60px;
+        }
+    }
+    .text
+    {
+        padding-bottom: 50px;
+    }
+}
