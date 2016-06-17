@@ -10,7 +10,7 @@ release: April 13th, 2016 (Early Access)
 website: http://www.welkinroad.com/
 steam: http://store.steampowered.com/app/432720/
 description: Welkin Road is first person platformer where you use two grappling hooks to overcome movement-based puzzles.
-image_path: images/project_thumb_welkinroad.png
+image_path: images/project_thumb_welkinroad.jpg
 ---
 <div class="project-page">
 	<div class="description">
