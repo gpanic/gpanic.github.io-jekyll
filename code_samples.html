@@ -1,0 +1,28 @@
+---
+layout: default
+page_title: Code Samples
+title: Code Samples
+---
+<div class="content-inner">
+    <div class="container">
+        <h1>Code Samples</h1>
+
+        <h2>Welkin Road</h2>
+        {% assign welkin_road = site.code_samples | where: "category", "welkin_road" %}
+        {% for sample in welkin_road %}
+        <a href="{{ sample.url }}">{{ sample.title }}</a></br>
+        {% endfor %}
+
+        <h2>3dApi</h2>
+        {% assign 3dApi = site.code_samples | where: "category", "3dApi" %}
+        {% for sample in 3dApi %}
+        <a href="{{ sample.url }}">{{ sample.title }}</a></br>
+        {% endfor %}
+
+        <h2>Miscellaneous</h2>
+        {% assign misc = site.code_samples | where: "category", "misc" %}
+		{% for sample in misc %}
+		<a href="{{ sample.url }}">{{ sample.title }}</a></br>
+		{% endfor %}
+    </div>
+</div>

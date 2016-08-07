@@ -5,9 +5,11 @@
                 <div class="name">Gregor Panič</div>
                 <div class="title">Gameplay Programmer</div>
                 <div class="nav">
-                    <a class="btn btn-blue" href="/" role="button">Work</a>
-                    <a class="btn btn-blue" href="/about.html" role="button">About</a>
-                    <a class="btn btn-blue" href="/resume.html" role="button">Résumé</a>
+                    <a class="btn btn-blue {% if page.title == 'Work' %}active{% endif %}" href="/" role="button">Work</a>
+                    <a class="btn btn-blue {% if page.title == 'Projects' %}active{% endif %}" href="/projects.html" role="button">Projects</a>
+                    <a class="btn btn-blue {% if page.title == 'About' %}active{% endif %}" href="/about.html" role="button">About</a>
+                    <a class="btn btn-blue {% if page.title == 'Résumé' %}active{% endif %}" href="/resume.html" role="button">Résumé</a>
+                    <a class="btn btn-blue {% if page.title == 'Code Samples' %}active{% endif %}" href="/code_samples.html" role="button">Code Samples</a>
                     <!--<a class="btn btn-blue" href="mailto:gregor.panic@gmail.com" role="button">Contact</a>-->
                 </div>
             </div>

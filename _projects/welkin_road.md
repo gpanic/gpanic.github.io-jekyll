@@ -1,7 +1,7 @@
 ---
 layout: default
 page_title: Welkin Road
-url: projects/welkin_road.html
+type: professional
 year: 2016
 platform: PC (Steam)
 role: Designer, programmer, artist
@@ -9,7 +9,7 @@ tools: Unity, C#, Blender, Sculptris, Visual Studio, Git, Photoshop, Premiere
 release: April 13th, 2016 (Early Access)
 website: http://www.welkinroad.com/
 steam: http://store.steampowered.com/app/432720/
-description: Welkin Road is first person platformer where you use two grappling hooks to overcome movement-based puzzles.
+description: Welkin Road is a first person platformer where you use two grappling hooks to overcome movement-based puzzles.
 image_path: images/project_thumb_welkinroad.jpg
 ---
 <div class="project-page">
@@ -82,7 +82,7 @@ image_path: images/project_thumb_welkinroad.jpg
 	<div class="text">
 		<div class="container">
 			<p>
-				Welkin Road is first person platformer where you use two grappling hooks to overcome movement-based puzzles and perform thrilling stunts. You explore a world in the sky with a minimalist look. Levels provide new challenges in the form of different grappling mechanics and new ways of using what you've already learned.
+				Welkin Road is a first person platformer where you use two grappling hooks to overcome movement-based puzzles and perform thrilling stunts. You explore a world in the sky with a minimalist look. Levels provide new challenges in the form of different grappling mechanics and new ways of using what you've already learned.
 			</p>
 			<p>
 				I started working on Welkin Road while studying at university. I kept iterating and improving on the concept until I had something that was fun to play and showed promise. After graduating, I decided to start working on it full-time. Nine months later, I was able to release the game on Steam Early Access, where it got a pretty positive reception. With the help of my awesome community, I was able to identify many issues and opportunities for improvement. This helped me greatly to move the game in the right direction. I continue to work on this project to this day and I still have a couple of big features in the works that will see the light of day in the coming months.

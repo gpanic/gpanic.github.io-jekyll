@@ -40,6 +40,11 @@ h2
     font-size: 30px;
 }
 
+h3
+{
+    font-size: 20px;
+}
+
 ::selection
 {
     background: $accent-base;
@@ -173,7 +178,7 @@ hr
     border-color: rgba(69, 156, 247, 0.6);
     color: $accent-base;
     box-shadow: none;
-    &:hover
+    &:hover, &.active
     {
         background-color: $accent-base;
         border-color: $accent-base;
@@ -353,4 +358,11 @@ footer
     {
         padding-bottom: 50px;
     }
+}
+
+pre
+{
+    border: none;
+    border-radius: 0;
+    padding: 20px;
 }

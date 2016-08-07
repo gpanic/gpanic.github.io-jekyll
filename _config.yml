@@ -17,6 +17,10 @@ github_username:  vision810
 collections:
   projects:
     output: true
+  code_samples:
+    output: true
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+excerpt_separator: ""
